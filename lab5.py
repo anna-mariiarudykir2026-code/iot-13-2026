@@ -36,7 +36,8 @@ def are_friends(pets_array):
         for j in range(i + 1, len(pets_array)):
             if abs(pets_array[i].age - pets_array[j].age) < 2:
                 friends.append((pets_array[i].name, pets_array[j].name))
-                return friends
+
+    return friends
 
 def sort_by_age(pets_list):
     return sorted(pets_list, key=lambda pet:pet.age)
