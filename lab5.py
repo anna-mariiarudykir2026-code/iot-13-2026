@@ -44,9 +44,9 @@ def sort_by_age(pets_list):
   
 
 if __name__ == "__main__":
-    p1 = Pet("Франциск", "Німецька вівчарка", 3, "Woof! Hello!", 15.0, "DOG")
-    p2 = Pet("Мурка", "Британка", 4, "Meow", 4.0, "CAT")
-    p3 = Pet("Пірат", "Папуга", 1, "Hello!Where is my food?", 0.2, "BIRD")
+    p1 = Pet("Франциск", "Німецька вівчарка", 3, "Woof! Hello!", 15.0, Kind.DOG)
+    p2 = Pet("Мурка", "Британка", 4, "Meow", 4.0, Kind.CAT)
+    p3 = Pet("Пірат", "Папуга", 1, "Hello!Where is my food?", 0.2, Kind.BIRD)
 
     my_home = Home()
     my_home.pet.append(p1)
