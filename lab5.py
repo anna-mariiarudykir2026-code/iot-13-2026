@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class Kind(Enum):
     DOG = "dog"
     CAT = "cat"
@@ -26,8 +27,9 @@ class Home():
     def __init__(self):
         self.pet = []
 
-    def add(self, pet):
+        def add(self, pet):
         self.pet.append(pet)
+
 
 def are_friends(pets_array):
     friends = []
@@ -37,6 +39,11 @@ def are_friends(pets_array):
             if abs(pets_array[i].age - pets_array[j].age) < 2:
                 friends.append((pets_array[i].name, pets_array[j].name))
 
+    return friends
+
+
+def sort_by_age(pets_list):
+    return sorted(pets_list, key=lambda pet: pet.age)
     return friends
 
 def sort_by_age(pets_list):
